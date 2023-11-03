@@ -25,7 +25,6 @@ export default function App() {
           <AboutComponent />
         </div>
       </div>
-      <FooterComponent />
     </div>
   )
 }
