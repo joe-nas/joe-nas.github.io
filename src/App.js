@@ -11,9 +11,9 @@ import AboutComponent from './components/AboutComponent.jsx';
 
 export default function App() {
   return (
-    <div className='mx-auto px-32 prose-slate prose-sm'>
-      <div className='flex flex-row'>
-        <div className='basis-2/3'>
+    <div className='mx-auto prose-slate prose-sm'>
+      <div className='flex flex-row gap-10'>
+        <div className='basis-2/3 pl-32'>
           <SkillsComponent />
           <ProjectComponent />
           <ExperienceComponent />
@@ -21,7 +21,7 @@ export default function App() {
           <WritingComponent />
           <EducationComponent />
         </div>
-        <div className='basis-1/3'>
+        <div className='basis-1/3 bg-slate-100 xs:hidden'>
           <AboutComponent />
         </div>
       </div>

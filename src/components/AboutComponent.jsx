@@ -19,7 +19,6 @@ const AboutComponent = () => {
         // <div className='mt-8 fixed top-0 right-0 w-1/3 pr-20'>
         <div className='mt-8 fixed mr-32 pl-10'>
             <h1 className='font-bold'>{name}</h1>
-            <div className='text-justify'>{about.about_content}</div>
             <div className='flex flex-row pt-1'>
                 <div><AiOutlineGithub size='1.5em' /></div>
                 <a href="https://github.com/joe-nas" target='_blank' className='ml-3'>{github_username}</a>
@@ -32,6 +31,7 @@ const AboutComponent = () => {
                 <div><AiOutlineMail size='1.5em' /></div>
                 <a href={`mailto:${email}`} className='ml-3'>{email}</a>
             </div>
+            <div className='text-justify pt-3' dangerouslySetInnerHTML={{ __html: about_content }} ></div>
         </div >
     )
 }
