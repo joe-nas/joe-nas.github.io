@@ -17,20 +17,17 @@ const AboutComponent = () => {
 
     return (
         // <div className='mt-8 fixed top-0 right-0 w-1/3 pr-20'>
-        <div className='mt-8 fixed mr-32 pl-10'>
+        // <div className='mt-8 fixed mr-32 pl-10'>
+        <div className='sm:pr-32 md:pr-8 md:min-w-56'>
             <h1 className='font-bold'>{name}</h1>
-            <div className='flex flex-row pt-1'>
-                <div><AiOutlineGithub size='1.5em' /></div>
-                <a href="https://github.com/joe-nas" target='_blank' className='ml-3'>{github_username}</a>
-            </div>
-            <div className='flex flex-row'>
-                <div><CgWebsite size='1.5em' /></div>
-                <a href='https://joe-nas.github.io' target='_blank' className='ml-3'>{website}</a>
-            </div>
-            <div className='flex flex-row'>
-                <div><AiOutlineMail size='1.5em' /></div>
-                <a href={`mailto:${email}`} className='ml-3'>{email}</a>
-            </div>
+            < div className='flex flew-col sm:flex-row justify-between' >
+                <div className='flex flex-col py-8 mr-8'>
+                    <a href="https://github.com/joe-nas" target='_blank' className='flex flex-row'><AiOutlineGithub size='1.5em' /> {github_username}</a>
+                    <a href='https://joe-nas.github.io' target='_blank' className='flex flex-row'><CgWebsite size='1.5em' /> {website}</a>
+                    <a href={`mailto:${email}`} className='flex flex-row'><AiOutlineMail size='1.5em' /> {email}</a>
+                </div>
+                <img src={`${process.env.PUBLIC_URL}/ppic_small5.png`} className='flex rounded-full max-w-fit' width="180" height="auto" />
+            </div >
             <div className='text-justify pt-3' dangerouslySetInnerHTML={{ __html: about_content }} ></div>
         </div >
     )

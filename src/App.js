@@ -12,16 +12,16 @@ import AboutComponent from './components/AboutComponent.jsx';
 export default function App() {
   return (
     <div className='mx-auto prose-slate prose-sm'>
-      <div className='flex flex-row gap-10'>
-        <div className='basis-2/3 pl-32'>
+      <div className='flex flex-col-reverse sm:flex-row sm:gap-5'>
+        <div className='w-full px-5 sm:basis-2/3 sm:pl-32'>
           <SkillsComponent />
           <ProjectComponent />
           <ExperienceComponent />
-          <ExtracurricularComponent />
           <WritingComponent />
           <EducationComponent />
+          <ExtracurricularComponent />
         </div>
-        <div className='basis-1/3 bg-slate-100 xs:hidden'>
+        <div className='w-full px-8 py-8 bg-slate-200 sm:basis-1/3 sm:px-10 sm:pr-22'>
           <AboutComponent />
         </div>
       </div>

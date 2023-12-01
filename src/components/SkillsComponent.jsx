@@ -1,13 +1,15 @@
 import React from 'react'
 import mySkills from '../data/skills.json'
-
+import Heading from './Heading'
 
 const SkillsComponent = () => {
     const { title, content } = { ...mySkills }
     return (
 
         <div className='mt-8'>
-            <div className='text-xl font-bold text-center p-5 divider'>{title}</div>
+            <div className='text-xl font-bold text-center divider'>
+                <Heading length={3} style={"text-slate-500"} title={title} />
+            </div>
             {/* content block */}
             {content.map((subSkill, index) => {
                 return (

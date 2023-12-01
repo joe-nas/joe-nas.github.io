@@ -1,11 +1,14 @@
 import React from 'react'
 import projects from '../data/projects.json'
+import Heading from './Heading'
 
 const ProjectComponent = () => {
     const { title, content } = { ...projects }
     return (
         <div className='mt-8'>
-            <div className='text-xl font-bold text-center p-5 divider'>{title}</div>
+            <div className='text-xl font-bold text-center divider'>
+                <Heading length={3} style={"text-slate-500"} title={title} />
+            </div>
             {content.map((project, index) =>
                 <Project key={index} item={project} />
             )}
