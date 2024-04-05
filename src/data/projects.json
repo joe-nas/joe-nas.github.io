@@ -5,7 +5,7 @@
       "title": "Iron Delirium™ - The Workout Tracker that Noone asked for",
       "link": "github.com/joe-nas",
       "link_text": "Iron Delirium™",
-      "description": "Iron Delirium™ is a workout tracker that allows users to track their workouts and progress over time. Users can create an account, log in, and create workouts. Workouts can be edited and deleted, and users can view their workout history. Iron Delirium™ is built using Spring Boot/Security and MongoDb in the backend and Next.js in the frontend."
+      "description": "Iron Delirium™ is my current toy project, a workout tracker that allows users to track their workouts and progress over time. Users can create an account, log in, and create workouts. Workouts can be edited and deleted, and users can view their workout history. Iron Delirium™ is built using Spring Boot/Security and MongoDb in the backend and Next.js in the frontend."
     },
     {
       "title": "haploplotR - Visualizing linkage disequilibrium from 1000 genomes data",
