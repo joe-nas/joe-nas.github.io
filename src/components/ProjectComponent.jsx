@@ -20,14 +20,20 @@ export default ProjectComponent
 
 const Project = ({ item }) => {
     const { title, description, link, link_text } = { ...item }
-
+    const links = zip(link, link_text)
     return (
         <div className='mt-5'>
             <div className='flex flex-row justify-between'>
                 <div className='text-lg font-bold pb-3'>{title}</div>
-                <a href={link} target='_blank' rel='noreferrer'>{link_text} @ github</a>
+                <div className='flex flex-col justify-center pb-3'>
+                    {links.map((link, index) =>
+                        <a key={index} href={link[0]} target='_blank' rel='noreferrer'>{link[1]} @ github</a>
+                    )}
+                </div>
             </div>
             <div className='text-md text-justify'>{description}</div>
         </div >
     )
 }
+
+const zip = (a, b) => a.map((k, i) => [k, b[i]])
