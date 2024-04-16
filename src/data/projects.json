@@ -3,6 +3,16 @@
   "content": [
     {
       "title": "Iron Delirium™ - The Workout Tracker that Noone asked for",
+      "links": [
+        {
+          "url": "https://github.com/joe-nas/workout-app-frontend-next",
+          "name": "Iron Delirium™ frontend"
+        },
+        {
+          "url": "https://github.com/joe-nas/workout-app",
+          "name": "Iron Delirium™ backend"
+        }
+      ],
       "link": [
         "https://github.com/joe-nas/workout-app-frontend-next",
         "https://github.com/joe-nas/workout-app"
