@@ -6,7 +6,7 @@
       "skills": [
         {
           "name": "Operating Systems",
-          "value": "Linux (10+ years Arch and Debian-based distributions), Windows, macOS"
+          "value": "Linux (15+ years Arch and Debian-based distributions), Windows, macOS"
         },
         {
           "name": "Version Control",
@@ -43,7 +43,7 @@
         },
         {
           "name": "Other Web-related Skills",
-          "value": "HTML, tailwindcss"
+          "value": "REST, HTML, tailwindcss"
         },
         {
           "name": "Webserver",
